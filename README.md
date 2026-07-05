@@ -3,7 +3,7 @@
 Проект команды **IDR** (Соловьев Матвей — капитан, Меркулов Александр — OCR, Горинов Ярослав — анализ), реализованный в рамках ИТ-соревнования **Норникель AI Science Hack** по кейсу [«Научный клубок» (task-2)](https://nornickel-ai-hackathon.ru/task-2).
 
 Демонстрационная веб-версия продукта:
-🔗 [https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer](https://b-on-g.github.io/norweb/#!api=https%253A%252F%252Fragu-back.duckdns.org)
+🔗 [https://github.com/b-on-g/norweb/#!api=https%3A%2F%2Fragu-back.duckdns.org](https://b-on-g.github.io/norweb/#!api=https%3A%2F%2Fragu-back.duckdns.org)
 
 PPTX:
 [https://docs.google.com/presentation/d/1FYYxTDuat8A1Pru5JYFLbjtlSYp1aEd7/edit?usp=sharing&ouid=108854868902280317653&rtpof=true&sd=true](https://docs.google.com/presentation/d/138dQzasY-c8gHIgTxtmHonijP5wyJ_az/edit?usp=sharing&ouid=110276056803001646256&rtpof=true&sd=true)
@@ -366,14 +366,12 @@ Meno-Lite-0.1 показывает лучший результат по сово
 | Ресурс | URL |
 |---|---|
 | Кейс хакатона | https://nornickel-ai-hackathon.ru/task-2 |
-| Демо продукта ($mol-интерфейс) | [https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer](https://github.com/m0tbka/norhack) |
-| RAGU (GraphRAG-движок) | https://github.com/RaguTeam/RAGU |
-| RAGU Web | https://github.com/RaguTeam/web |
-| Веб-интерфейс [проекта ($mol / norweb) | https://github.com/b-on-g/norweb](https://b-on-g.github.io/norweb/#!api=https%253A%252F%252Fragu-back.duckdns.org) |
-| Сайт фреймворка $mol | https://mol.hyoo.ru |
-| Meno-Lite-0.1 (веса на Hugging Face) | https://huggingface.co/bond005/meno-lite-0.1 |
-| NEREL (исходный датасет) | https://github.com/nerel-ds/NEREL |
-| NEREL, статья (RANLP 2021) | https://arxiv.org/abs/2108.13112 |
+| Демо продукта ($mol-интерфейс) | [https://github.com/b-on-g/norweb/#!api=https%3A%2F%2Fragu-back.duckdns.org](https://b-on-g.github.io/norweb/#!api=https%3A%2F%2Fragu-back.duckdns.org) |
+| RAGU | https://github.com/b-on-g/RAGU |
+| Web | https://github.com/b-on-g/norweb |
+| $mol | https://mol.hyoo.ru |
+| Meno-Lite-0.1 | https://huggingface.co/bond005/meno-lite-0.1 |
+| NEREL | https://github.com/nerel-ds/NEREL |
 | PPTX | https://docs.google.com/presentation/d/138dQzasY-c8gHIgTxtmHonijP5wyJ_az/edit?usp=sharing&ouid=110276056803001646256&rtpof=true&sd=true |
 
 ---
