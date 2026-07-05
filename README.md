@@ -6,7 +6,7 @@
 🔗 [https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer](https://b-on-g.github.io/norweb/#!api=https%253A%252F%252Fragu-back.duckdns.org)
 
 PPTX:
-https://docs.google.com/presentation/d/1FYYxTDuat8A1Pru5JYFLbjtlSYp1aEd7/edit?usp=sharing&ouid=108854868902280317653&rtpof=true&sd=true
+[https://docs.google.com/presentation/d/1FYYxTDuat8A1Pru5JYFLbjtlSYp1aEd7/edit?usp=sharing&ouid=108854868902280317653&rtpof=true&sd=true](https://docs.google.com/presentation/d/138dQzasY-c8gHIgTxtmHonijP5wyJ_az/edit?usp=sharing&ouid=110276056803001646256&rtpof=true&sd=true)
 
 ---
 
@@ -374,6 +374,7 @@ Meno-Lite-0.1 показывает лучший результат по сово
 | Meno-Lite-0.1 (веса на Hugging Face) | https://huggingface.co/bond005/meno-lite-0.1 |
 | NEREL (исходный датасет) | https://github.com/nerel-ds/NEREL |
 | NEREL, статья (RANLP 2021) | https://arxiv.org/abs/2108.13112 |
+| PPTX | https://docs.google.com/presentation/d/138dQzasY-c8gHIgTxtmHonijP5wyJ_az/edit?usp=sharing&ouid=110276056803001646256&rtpof=true&sd=true |
 
 ---
 
