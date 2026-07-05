@@ -152,6 +152,57 @@ graph.gml + kv_*.json + vdb_*.json
 
 ## Инструкция по установке
 
+### Frontend
+
+Это MAM-пакет, не самостоятельный npm-проект. Подключается к [MAM-репо](https://github.com/hyoo-ru/mam) как подпапка `bog/norweb`.
+
+#### Локально через MAM dev-server
+
+```bash
+# в корне MAM-репо
+git clone https://github.com/hyoo-ru/mam.git
+cd mam
+git clone https://github.com/b-on-g/norweb.git bog/norweb
+npm install
+npx mam start
+```
+
+Открыть: **http://localhost:9080/bog/norweb/front/app/-/test.html**
+
+Dev-сервер на лету пересобирает при изменении любого `.view.tree` / `.view.ts` / `.view.css.ts` / `.locale=*.json`.
+
+#### Сборка standalone
+
+```bash
+npx mam bog/norweb/front/app
+```
+
+Артефакт: `bog/norweb/front/app/-/` — статичная сборка для деплоя (index.html + web.js + web.css + локали).
+
+#### Тесты
+
+```bash
+node bog/norweb/front/app/-/node.test.js
+```
+
+Должно вывести `All tests passed`. Текущий счёт — **283** (структурные snapshot'ы, e2e-flow через view-API, URL state, CSS rule intent, новые фичи).
+
+### Backend API
+
+`back/` — отдельный FastAPI gateway с Pydantic v2-схемами и Swagger/OpenAPI-контрактом для Gallery, Explorer и Agent. Сейчас это mock-first API на детерминированных данных: live-индексация, Redis/RQ/Celery, GPU worker и Yandex Cloud-флоу намеренно не реализуются.
+
+```bash
+cd web/back
+python -m pip install -e ".[dev]"
+uvicorn ragu_web_api.main:app --reload --port 8000
+```
+
+Swagger UI: **http://localhost:8000/docs**. Все API-ручки находятся под `/api/v1`; upload/job/live-indexing endpoints отсутствуют, их доступность отражается через `GET /api/v1/capabilities`.
+
+### Connect Backend to Frontend
+
+Для подключения backend вставьте ссылку на него сюда:
+`https://b-on-g.github.io/norweb/#!api={link to the backend with https prefix}`
 
 ## RAGU — GraphRAG-движок
 
