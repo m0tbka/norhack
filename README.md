@@ -5,6 +5,9 @@
 Демонстрационная веб-версия продукта:
 🔗 https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer
 
+преза
+https://docs.google.com/presentation/d/1FYYxTDuat8A1Pru5JYFLbjtlSYp1aEd7/edit?usp=sharing&ouid=108854868902280317653&rtpof=true&sd=true
+
 ---
 
 ## Содержание
