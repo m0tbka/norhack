@@ -3,9 +3,9 @@
 Проект команды **IDR** (Соловьев Матвей — капитан, Меркулов Александр — OCR, Горинов Ярослав — анализ), реализованный в рамках ИТ-соревнования **Норникель AI Science Hack** по кейсу [«Научный клубок» (task-2)](https://nornickel-ai-hackathon.ru/task-2).
 
 Демонстрационная веб-версия продукта:
-🔗 https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer
+🔗 [https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer](https://b-on-g.github.io/norweb/#!api=https%253A%252F%252Fragu-back.duckdns.org)
 
-преза
+PPTX:
 https://docs.google.com/presentation/d/1FYYxTDuat8A1Pru5JYFLbjtlSYp1aEd7/edit?usp=sharing&ouid=108854868902280317653&rtpof=true&sd=true
 
 ---
@@ -186,26 +186,6 @@ graph.gml + kv_*.json + vdb_*.json
 - Инкрементальные upsert/update/delete на основе детерминированных хэш-идентификаторов и политик слияния.
 - Структурированный вывод LLM валидируется через Pydantic v2 — без ручного постпроцессинга JSON.
 
-### Метрики (по данным публикации RaguTeam, EMNLP-2026 System Demo)
-
-**Качество ответов на GraphRAG-Bench (медицинский домен), Answer Correctness:**
-
-| Система | LLM | Fact Retrieval | Complex Reasoning | Contextual Summ. | Creative Gen. |
-|---|---|---|---|---|---|
-| LightRAG | Qwen2.5-7B | 25.9 | 20.3 | 22.1 | 14.2 |
-| LightRAG | Meno-Lite-0.1 | 26.2 | 20.2 | 22.6 | 14.4 |
-| **RAGU** | Qwen2.5-7B | **54.1** | **54.6** | **64.9** | 58.1 |
-| **RAGU** | **Meno-Lite-0.1** | **54.2** | 53.7 | 64.1 | **59.0** |
-
-**Качество поиска (Retrieval), Evidence Recall:**
-
-| Система | LLM | Fact Retrieval | Complex Reasoning |
-|---|---|---|---|
-| LightRAG | Qwen2.5-7B | 71.4 | 68.2 |
-| LightRAG | Meno-Lite-0.1 | 76.1 | 71.3 |
-| **RAGU** | Qwen2.5-7B | **84.2** | **76.2** |
-| **RAGU** | Meno-Lite-0.1 | 82.4 | 74.5 |
-
 **Итог:** RAGU повышает Answer Correctness в **2–4×** относительно LightRAG (с ростом преимущества по мере усложнения задач — от ×2.1 на Fact Retrieval до ×4.1 на Creative Generation), а Evidence Recall — с 71–76% (LightRAG) до 76–84%. При этом размер LLM-экстрактора (3B → 14B) практически не влияет на итоговое качество графа (разброс Answer Correctness ≤1 п.п.), что подтверждает гипотезу «языковых навыков» и оправдывает использование компактной модели Meno-Lite-0.1.
 
 Репозиторий: https://github.com/RaguTeam/RAGU
@@ -230,7 +210,7 @@ graph.gml + kv_*.json + vdb_*.json
 | Репозиторий фреймворка | https://github.com/hyoo-ru/mam_mol |
 | Репозиторий веб-интерфейса проекта | https://github.com/b-on-g/norweb |
 | Сайт фреймворка | https://mol.hyoo.ru |
-| Демо продукта | https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer |
+| Демо продукта | [https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer](https://b-on-g.github.io/norweb/#!api=https%253A%252F%252Fragu-back.duckdns.org) |
 
 ---
 
@@ -386,10 +366,10 @@ Meno-Lite-0.1 показывает лучший результат по сово
 | Ресурс | URL |
 |---|---|
 | Кейс хакатона | https://nornickel-ai-hackathon.ru/task-2 |
-| Демо продукта ($mol-интерфейс) | https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer |
+| Демо продукта ($mol-интерфейс) | [https://b-on-g.github.io/norweb/#!ds=up-1783171167760-1/preset=accurate/screen=explorer](https://github.com/m0tbka/norhack) |
 | RAGU (GraphRAG-движок) | https://github.com/RaguTeam/RAGU |
 | RAGU Web | https://github.com/RaguTeam/web |
-| Веб-интерфейс проекта ($mol / norweb) | https://github.com/b-on-g/norweb |
+| Веб-интерфейс [проекта ($mol / norweb) | https://github.com/b-on-g/norweb](https://b-on-g.github.io/norweb/#!api=https%253A%252F%252Fragu-back.duckdns.org) |
 | Сайт фреймворка $mol | https://mol.hyoo.ru |
 | Meno-Lite-0.1 (веса на Hugging Face) | https://huggingface.co/bond005/meno-lite-0.1 |
 | NEREL (исходный датасет) | https://github.com/nerel-ds/NEREL |
